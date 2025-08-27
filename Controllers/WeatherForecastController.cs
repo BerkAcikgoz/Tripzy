@@ -29,4 +29,18 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+
+
+   [HttpGet("test", Name = "GetTest")]
+    public IEnumerable<WeatherForecast> GetTest(string test)
+    {
+        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        {
+            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+            TemperatureC = Random.Shared.Next(-20, 55),
+            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+        })
+        .ToArray();
+    }
+   
 }
