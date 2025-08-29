@@ -1,4 +1,4 @@
-namespace Tripzy.Entities;
+namespace Tripzy.Core.Models;
 
 public class User
 {
@@ -8,5 +8,6 @@ public class User
     public string Surname { get; set; }
     public byte Gender { get; set; }
     public string Email { get; set; }
-    public string PasswordHash { get; set; } 
+    public byte[] PasswordHash { get; set; }
+    public byte[] PasswordSalt { get; set; }
 }
