@@ -11,6 +11,14 @@ public class AccountController : ControllerBase
         _logger = logger;
     }
 
+
+    [HttpGet("login",Name = "login")]
+    public string Login()
+    {
+        return "Login";
+    }
+
+
     [HttpGet("register",Name = "register")]
     public string Register()
     {
