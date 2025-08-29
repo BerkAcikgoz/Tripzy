@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Tripzy.Core.Dtos;
+
 namespace Tripzy.Controllers;
 [ApiController]
 [Route("[controller]")]
@@ -17,13 +19,11 @@ public class UserController : ControllerBase
     }
 
     [HttpGet(Name = "userlist")]
-    public IEnumerable<WeatherForecast> UserList()
+    public IEnumerable<UserDto> UserList()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        return Enumerable.Range(1, 5).Select(index => new UserDto
         {
-            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            Name = "berk" ,
         })
         .ToArray();
     }

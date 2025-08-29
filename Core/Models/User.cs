@@ -1,6 +1,6 @@
-namespace Tripzy.Entities;
+namespace Tripzy.Core.Models;
 
-public class UserDto
+public class User
 {
     public int Id { get; set; }
     public string UserName { get; set; }

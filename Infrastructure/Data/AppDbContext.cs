@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using Tripzy.Entities;
+using Tripzy.Core.Models;
 
-namespace Tripzy.Data;
+namespace Tripzy.Infrastructure.Data;
 
 public class AppDbContext : DbContext
 {
