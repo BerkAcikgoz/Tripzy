@@ -1,8 +1,13 @@
-C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.exe
 C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\appsettings.json
+C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.exe
+C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.deps.json
+C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.runtimeconfig.json
+C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.dll
+C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.pdb
 C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
@@ -63,10 +68,5 @@ C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.csproj.CopyComplete
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.dll
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\refint\Tripzy.dll
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.pdb
-C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.deps.json
-C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.runtimeconfig.json
-C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.dll
-C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Tripzy.pdb
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.genruntimeconfig.cache
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\ref\Tripzy.dll
-C:\Users\TR\source\repos\Tripzy\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
