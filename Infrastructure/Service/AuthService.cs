@@ -7,7 +7,7 @@ using Tripzy.Core.Models;
 using Tripzy.Core.Repositories;
 using Tripzy.Core.Services;
 
-namespace TripzyAuth.Service
+namespace Tripzy.Infrastructure.Service
 {
     public class AuthService : IAuthService
     {

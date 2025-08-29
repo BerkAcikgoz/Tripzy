@@ -23,7 +23,7 @@ public class UserController : ControllerBase
     {
         return Enumerable.Range(1, 5).Select(index => new UserDto
         {
-            Name = "berk" ,
+            UserName = "berk" ,
         })
         .ToArray();
     }

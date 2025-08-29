@@ -15,13 +15,13 @@ namespace Tripzy.Infrastructure.Repositories
         }
 
         public async Task<User?> GetUserByUsernameAsync(string username)
-            => await _context.Users.FirstOrDefaultAsync(u => u.UserName == username);
+            => await _context.User.FirstOrDefaultAsync(u => u.UserName == username);
 
         public async Task AddUserAsync(User user)
-            => await _context.Users.AddAsync(user);
+            => await _context.User.AddAsync(user);
 
         public async Task<bool> UserExistsAsync(string username)
-            => await _context.Users.AnyAsync(u => u.UserName == username);
+            => await _context.User.AnyAsync(u => u.UserName == username);
 
         public async Task SaveChangesAsync()
             => await _context.SaveChangesAsync();
