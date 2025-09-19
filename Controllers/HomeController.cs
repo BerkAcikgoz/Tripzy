@@ -5,17 +5,17 @@ namespace Tripzy.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class UserController : ControllerBase
+public class HomeController : ControllerBase
 {
-    private readonly ILogger<UserController> _logger;
+    private readonly ILogger<HomeController> _logger;
 
-    public UserController(ILogger<UserController> logger)
+    public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
     }
 
-    [HttpGet(Name = "userlist")]
-    public IEnumerable<UserDto> UserList()
+    [HttpGet(Name = "categories")]
+    public IEnumerable<UserDto> CategoryList()
     {
         return Enumerable.Range(1, 5).Select(index => new UserDto
         {
