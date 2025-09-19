@@ -1,28 +1,12 @@
-using Microsoft.AspNetCore.Mvc;
-using Tripzy.Core.Dtos;
+﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Tripzy.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class HomeController : ControllerBase
+namespace Tripzy.Controllers
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public class HomeController : Controller
     {
-        _logger = logger;
-    }
-
-    [HttpGet(Name = "categories")]
-    public IEnumerable<UserDto> CategoryList()
-    {
-        return Enumerable.Range(1, 5).Select(index => new UserDto
+        public IActionResult Index()
         {
-            UserName = "berk" ,
-        })
-        .ToArray();
+            return View();
+        }
     }
-
- 
 }
