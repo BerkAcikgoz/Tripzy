@@ -1,7 +1,5 @@
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.csproj.AssemblyReference.cache
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.AssemblyInfoInputs.cache
-C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.AssemblyInfo.cs
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.csproj.CoreCompileInputs.cache
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\TR\source\repos\Tripzy\obj\Debug\net7.0\Tripzy.MvcApplicationPartsAssemblyInfo.cache
