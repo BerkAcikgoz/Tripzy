@@ -1,6 +1,6 @@
-﻿namespace Tripzy.Core.Models
+﻿namespace Tripzy.Core.Dtos
 {
-    public class Category
+    public class CategoryDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
