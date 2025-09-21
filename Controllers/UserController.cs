@@ -2,15 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 using Tripzy.Core.Dtos;
 
 namespace Tripzy.Controllers;
+
 [ApiController]
 [Route("[controller]")]
 public class UserController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
-
     private readonly ILogger<UserController> _logger;
 
     public UserController(ILogger<UserController> logger)
