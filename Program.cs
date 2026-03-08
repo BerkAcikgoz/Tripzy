@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using Tripzy.Core.Repositories;
 using Tripzy.Core.Services;
 using Tripzy.Infrastructure.Data;
-using Tripzy.Infrastructure.Repositories;
 using Tripzy.Infrastructure.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
@@ -22,10 +21,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Repository & Service
-builder.Services.AddScoped<IAuthRepository, AuthRepository>();
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-
-builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICityService, CityService>();
 
 // JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
