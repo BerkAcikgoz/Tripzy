@@ -1,16 +1,13 @@
 using Tripzy.Core.Entity;
+using Infrastructure.Repositories;
 using Tripzy.Infrastructure.Data;
 
 namespace Tripzy.Core.Repositories
 {
-    public class CityRepository : ICityRepository
+public class CityRepository : BaseRepository<City>, ICityRepository
+{
+    public CityRepository(AppDbContext context) : base(context)
     {
-        private readonly AppDbContext _context;
-
-        public CityRepository(AppDbContext context)
-        {
-            _context = context;
-        }
-        public List<City> GetCities() => _context.Cities.ToList();
     }
+}
 }

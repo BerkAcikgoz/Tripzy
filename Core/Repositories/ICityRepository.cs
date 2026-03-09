@@ -4,6 +4,7 @@ namespace Tripzy.Core.Repositories
 {
     public interface ICityRepository
     {
-      List<City> GetCities();
+     Task<IEnumerable<City>> GetAllAsync();
+     Task<City> GetByIdAsync(object id);
     }
 }

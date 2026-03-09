@@ -8,6 +8,8 @@ namespace Tripzy.Core.Entity
 
         public string Name { get; set; }
 
+         public string Icon { get; set; }
+
         public ICollection<Place> Places { get; set; }
     }
 }

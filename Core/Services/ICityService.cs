@@ -4,6 +4,7 @@ namespace Tripzy.Core.Services
 {
     public interface ICityService
     {
-        List<City> GetCities();
+        Task<IEnumerable<City>> GetAllAsync();
+        Task<City> GetByIdAsync(int id);
     }
 }

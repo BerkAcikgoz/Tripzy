@@ -7,7 +7,7 @@ using Tripzy.Core.Services;
 namespace Tripzy.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+   [Route("api/[controller]")]
     public class CitiesController : Controller
     {
         public ICityService cityService;
@@ -16,10 +16,19 @@ namespace Tripzy.Controllers
         {
             this.cityService = cityService;
         }
-
-        public List<CityDto> GetCities()
+   
+        [HttpGet]
+        public async Task<List<CityDto>> GetCities()
         {
-            return CityMapper.ToDtoList(this.cityService.GetCities());  
+            var cities = await this.cityService.GetAllAsync();
+            return CityMapper.ToDtoList(cities.ToList());  
+        }
+
+        [HttpGet("getCityById/{Id}")]
+        public async Task<CityDto> GetCityById(int Id)
+        {   
+            var city = await this.cityService.GetByIdAsync(Id);
+            return CityMapper.ToDto(city);  
         }
 
     }

@@ -21,21 +21,26 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Repository & Service
+builder.Services.AddScoped<ICityRepository, CityRepository>();
+builder.Services.AddScoped<IPlaceCategoryRepository, PlaceCategoryRepository>();
+
+
 builder.Services.AddScoped<ICityService, CityService>();
+builder.Services.AddScoped<IPlaceCategoryService, PlaceCategoryService>();
 
 // JWT
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        var key = Encoding.UTF8.GetBytes(builder.Configuration["AppSettings:Token"]);
-        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
-        {
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(key),
-            ValidateIssuer = false,
-            ValidateAudience = false
-        };
-    });
+// builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+//     .AddJwtBearer(options =>
+//     {
+//         var key = Encoding.UTF8.GetBytes(builder.Configuration["AppSettings:Token"]);
+//         options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+//         {
+//             ValidateIssuerSigningKey = true,
+//             IssuerSigningKey = new SymmetricSecurityKey(key),
+//             ValidateIssuer = false,
+//             ValidateAudience = false
+//         };
+//     });
 
 
 var app = builder.Build();

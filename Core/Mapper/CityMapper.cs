@@ -7,11 +7,13 @@ namespace Tripzy.Core.Mapper
     {
         public static CityDto ToDto(City City)
         {
-            return new CityDto
+             return new CityDto
             {
                 Id = City.Id,
                 Name = City.Name,
-                CountryId = City.CountryId
+                CountryId = City.CountryId,
+                Latitude= City.Latitude,
+                Longitude= City.Longitude
             };
         }
 
@@ -19,9 +21,11 @@ namespace Tripzy.Core.Mapper
         {
             return new City
             {
-              Id = CityDto.Id,
+                Id = CityDto.Id,
                 Name = CityDto.Name,
-                CountryId = CityDto.CountryId
+                CountryId = CityDto.CountryId,
+                Latitude= CityDto.Latitude,
+                Longitude= CityDto.Longitude
             };
         }
 
